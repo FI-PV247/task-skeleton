@@ -16,11 +16,11 @@ jobs:
 
       - name: Lint
         run: |
-          | npm exec eslint "./src/**/*.{ts,tsx}"
-          | npm exec prettier "./src/**/*.{ts,tsx}" --check
+          npm exec eslint "./src/**/*.{ts,tsx}"
+          npm exec prettier "./src/**/*.{ts,tsx}" --check
 
       - name: Build
-        run: npm build
+        run: npm run build
 
   success:
     name: On submission successful
